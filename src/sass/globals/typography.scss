@@ -1,0 +1,34 @@
+// Font Path
+// --------------------------
+$font-path: '/fonts';
+$version: 1.0;
+
+@font-face {
+    font-family: 'Myriad-pro';
+    src:url("#{$font-path}/myriadpro-cond.eot?v=#{$version}");
+    src:url("#{$font-path}/myriadpro-cond.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/myriadpro-cond.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/myriadpro-cond.woff?v=#{$version}") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-pro';
+    src:url("#{$font-path}/myriadpro-boldcond.eot?v=#{$version}");
+    src:url("#{$font-path}/myriadpro-boldcond.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/myriadpro-boldcond.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/myriadpro-boldcond.woff?v=#{$version}") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-pro';
+    src:url("#{$font-path}/myriadpro-cond.eot?v=#{$version}");
+    src:url("#{$font-path}/myriadpro-cond.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/myriadpro-cond.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/myriadpro-cond.woff?v=#{$version}") format("woff");
+    font-weight: 300;
+    font-style: 300;
+}
