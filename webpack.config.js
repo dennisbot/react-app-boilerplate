@@ -1,10 +1,10 @@
 var webpack = require("webpack");
 var path = require("path");
 
-var parentDir = path.join(__dirname, "");
+var sourceDirectory = path.join(__dirname, "src");
 
 module.exports = {
-    entry: [path.join(parentDir, "index.js")],
+    entry: [path.join(sourceDirectory, "index.js")],
     module: {
         rules: [
             {
@@ -19,12 +19,12 @@ module.exports = {
         ]
     },
     output: {
-        path: parentDir + "/dist",
+        path: path.join(__dirname, "dist"),
         filename: "bundle.js"
     },
     devServer: {
         hot: true,
-        contentBase: parentDir,
+        contentBase: sourceDirectory,
         historyApiFallback: true
     }
 };
