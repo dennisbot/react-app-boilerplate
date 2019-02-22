@@ -1,0 +1,32 @@
+form#login-form.login-form(action="#", method="post", autocomplete="off")
+    label.login-form__title Fecha de nacimiento
+
+    .login-form__field
+        span
+            input#day_born(name="day_born", type="text", placeholder="Día", maxlength="2", autocomplete="off")
+
+    .login-form__field
+        span
+            input#month_born(name="month_born", type="text", placeholder="Mes", maxlength="2", autocomplete="off")
+
+
+    .login-form__field
+        span
+            input#year_born(name="year_born", type="text", placeholder="Año", maxlength="4", autocomplete="off")
+
+
+    .login-form__field.input--full
+        span
+            input#dni(name="dni", type="text", placeholder="DNI", maxlength="8", autocomplete="off")
+
+
+    .field__birth
+        span
+            input#birth_date(type="hidden", name="birth_date")
+
+
+    #errors.errors
+
+
+    .login-form__action.align-center
+        button#btn-login.btn-action__button(type="submit") Ingresar

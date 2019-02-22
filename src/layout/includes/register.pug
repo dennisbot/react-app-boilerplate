@@ -1,0 +1,109 @@
+form#register-form.register-form(action="#", method="post", autocomplete="off")
+    .register-form__field
+        span
+            input#name(name="name", type="text", placeholder="Nombres")
+
+
+    .register-form__field
+        span
+            input#lastname_father(name="lastname_father", type="text", placeholder="Apellido Paterno")
+
+
+    .register-form__field
+        span
+            input#lastname_mother(name="lastname_mother", type="text", placeholder="Apellido Materno")
+
+
+    .register-form__group
+        .register-form__field.space
+            label Fecha de Nacimiento
+
+        .register-form__field--born.space
+            span
+                input#day_born(name="day_born", type="text", placeholder="Día",
+                maxlength="2")
+
+        .register-form__field--born.space
+            span
+                input#month_born(name="month_born", type="text",
+                placeholder="Mes", maxlength="2")
+
+        .register-form__field--born
+            span
+                input#year_born(name="year_born", type="text",
+                placeholder="Año", maxlength="4")
+
+
+    .register-form__field.space.media
+        span
+            input#dni(name="dni", type="text", placeholder="DNI", maxlength="8")
+
+
+    .register-form__group--genre
+        .register-form__field.space
+            label Género
+
+        .register-form__field.space
+            label(for="m") M
+            .wrap.check
+                input#m(name="gender", type="radio", value="M", checked)
+
+        .register-form__field
+            label(for="f") F
+            .wrap
+                input#f(name="gender", type="radio", value="F")
+
+
+    .register-form__field--email
+        span
+            input#email(name="email", type="email", placeholder="Correo electrónico")
+
+
+    .register-form__group--city
+        .register-form__field.space
+            span
+                select#department(name="department")
+                    option(value="") Departamento
+
+        .register-form__field.space
+            span
+                select#province(name="province")
+                    option(value="") Provincia
+
+        .register-form__field
+            span
+                select#district(name="district")
+                    option(value="") Distrito
+
+
+    .register-form__field--mobile
+        span
+            input#mobile(name="mobile", type="text", placeholder="Número de celular", maxlength="9")
+
+
+    .register-form__field--text
+        label Todos estos datos son necesarios.
+
+
+    .register-form__field--check
+        .wrap
+            input#terms(name="terms", type="checkbox")
+        label(for="terms").
+            Acepto los Términos y condiciones.
+
+
+    .register-form__field--text
+        h3 Recibe novedades y promociones
+
+
+    .register-form__field--check
+        .wrap
+            input#promo(name="promo", type="checkbox")
+        label(for="promo") Acepto recibir comunicaciones y promociones futuras
+
+
+    #errors.errors
+
+
+    .register-form__action
+        button#btn-register.btn-action__button(type="submit") Continuar

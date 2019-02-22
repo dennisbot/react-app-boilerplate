@@ -1,0 +1,31 @@
+extends extends/base
+
+block identify
+    input#identify(type="hidden", data-controller="login", data-action="")
+
+
+block content
+    include includes/mixins
+
+
+    header.header
+        .limiter
+            h1 #{data.title}
+
+    section#content.content-wrapper
+        .limiter
+            p #{data.string}
+            .form_block
+                include includes/login
+
+    .test-for
+        .limiter
+            ul
+                each value, index in data.persons
+                    +pet(index, value)
+
+
+
+            p #{data.timestamp.canonical}
+
+block bottom

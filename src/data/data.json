@@ -1,0 +1,30 @@
+{
+  "persons": [
+    {
+      "name": "Clark",
+      "lastname": "Evans",
+      "id": 39467890
+    },
+    {
+      "name": "Sara",
+      "lastname": "Connors",
+      "id": 78694500
+    },
+    {
+      "name": "Oliver",
+      "lastname": "Atom",
+      "id": 38784520
+    }
+  ],
+  "bool": [
+    true,
+    false
+  ],
+  "float": 6.852,
+  "int": 685230,
+  "string": "Esto es un texto de prueba, con el único proposito de servir de muestra al momento de usar Yaml como objeto de data...\n",
+  "timestamp": {
+    "canonical": "2001-12-15T02:59:43.100Z"
+  },
+  "title": "Login Test"
+}
